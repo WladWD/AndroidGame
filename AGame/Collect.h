@@ -1,0 +1,27 @@
+#include "DrawObject.h"
+#include "LowPolyModelInstance.h"
+#include "BoundingSphereInstance.h"
+#include "LoadCollect.h"
+
+#pragma once
+namespace Draw
+{
+	struct CollectCollisionStruct
+	{
+		const Collision::BoundingSphereInstance *mBounding;
+	};
+
+	class Collect : public DrawObject
+	{
+		//////////////////////////////////////////////////////////////////////////////////////
+		Collision::BoundingSphere *mBoundingCookie;
+		//////////////////////////////////////////////////////////////////////////////////////
+	public:
+		Collect(Resource::ResourceBase *resourceLoad, std::string mName);
+		~Collect();
+		//////////////////////////////////////////////////////////////////////////////////////
+		Collision::BoundingSphere *GetBoundingSphere(void);
+		//////////////////////////////////////////////////////////////////////////////////////
+	};
+}
+

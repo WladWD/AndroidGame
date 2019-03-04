@@ -1,0 +1,35 @@
+//#version 100
+/////////////////////////////////////////////////////////
+//define 
+#ifdef GL_FRAGMENT_PRECISION_HIGH
+precision highp float;
+#else
+precision mediump float;
+#endif
+/////////////////////////////////////////////////////////
+#define MPIDIV2  1.57079632679
+/////////////////////////////////////////////////////////
+//varying
+varying vec3 gFragWorldPos;
+varying vec2 gFragTexCoord;
+/////////////////////////////////////////////////////////
+//uniform 
+uniform vec2 gFog;
+uniform vec4 gFogColor;
+/////////////////////////////////////////////////////////
+//uniform sampler
+uniform sampler2D mDiffuse;
+/////////////////////////////////////////////////////////
+//fragment shader
+void main()
+{
+	float f = length(gFragWorldPos);
+	f = sin(clamp((f - gFog.x) / gFog.y, 0.0, 1.0) * MPIDIV2);
+
+	vec4 mColor = texture2D(mDiffuse, gFragTexCoord);
+
+	mColor = mix(mColor, gFogColor, f);
+
+	gl_FragColor = mColor;
+}
+/////////////////////////////////////////////////////////

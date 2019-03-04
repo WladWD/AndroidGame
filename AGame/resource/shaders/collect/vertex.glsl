@@ -1,0 +1,26 @@
+//#version 100
+/////////////////////////////////////////////////////////
+//attribute
+attribute vec3 gWorldPos;
+attribute vec2 gTexCoord;
+/////////////////////////////////////////////////////////
+//varying
+varying vec3 gFragWorldPos;
+varying vec2 gFragTexCoord;
+/////////////////////////////////////////////////////////
+//uniform
+uniform mat4 mProjView;
+uniform mat4 mWorld;
+/////////////////////////////////////////////////////////
+//vertex shader
+void main()
+{
+	vec4 gWorld = mWorld * vec4(gWorldPos, 1.0);
+
+	gFragWorldPos = gWorld.xyz;
+	gFragTexCoord = gTexCoord;// vec2(gTexCoord.x, 1.0 - gTexCoord.y);
+
+	gl_Position = mProjView * gWorld;
+}
+/////////////////////////////////////////////////////////
+

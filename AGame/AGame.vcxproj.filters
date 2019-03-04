@@ -1,0 +1,902 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Файлы исходного кода">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Заголовочные файлы">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{e56dec81-6c93-44aa-ace3-c3bffbc9eecc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\pipe">
+      <UniqueIdentifier>{dc1a995e-e8c0-4c4a-b1fa-80813affdd56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\cookie">
+      <UniqueIdentifier>{91a6a2ae-73f3-40c2-8399-428ad06dd172}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\cookie\1">
+      <UniqueIdentifier>{87218c89-e1fb-40d6-ada2-374289fe30fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\Load">
+      <UniqueIdentifier>{1a71597a-e20e-4c9d-9220-7ed2fd4ba2b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\Load">
+      <UniqueIdentifier>{dbd92795-123c-4cbc-9def-11269be89f68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\Shader">
+      <UniqueIdentifier>{5f7eddce-28b4-4e7a-a027-cd8e7a101101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\Shader">
+      <UniqueIdentifier>{184d700c-6c93-4748-918b-24add956cfb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\pipe\default">
+      <UniqueIdentifier>{9a5efeb4-38d6-45e2-9ed8-b25191e34f8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\barrier">
+      <UniqueIdentifier>{78382add-fa55-413f-952c-e606cd1955d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\barrier\blade1">
+      <UniqueIdentifier>{6ff81b48-037e-4d84-93d6-7627317dd825}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\end_game">
+      <UniqueIdentifier>{9e36e32b-b6ca-4a69-bda4-db1892cc2c35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\fullscreenquad">
+      <UniqueIdentifier>{0ccd1729-12ea-4604-b3a5-4bbe535c5c34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\Collision">
+      <UniqueIdentifier>{ef942b7d-2354-440c-bf11-f979b54498d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\Collision">
+      <UniqueIdentifier>{9a1bd3bd-7f71-412a-ac69-bf8ff84cddc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\Load v2">
+      <UniqueIdentifier>{359a9ea1-cd7d-4621-86b2-4100c19cb2c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\Load v2">
+      <UniqueIdentifier>{7fcd1b10-181c-4472-960b-b4d95bf564b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\collect">
+      <UniqueIdentifier>{341593fe-67e2-446c-842c-c2f078b585d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\barrier\static">
+      <UniqueIdentifier>{8762251d-952f-49b3-92fe-a8ae99520363}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\collect\flash">
+      <UniqueIdentifier>{0640e431-f18b-4993-aa85-01bca22627e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\drawScore">
+      <UniqueIdentifier>{be057567-a073-4839-8722-707f23433c44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\drawScore\draw_bitmap">
+      <UniqueIdentifier>{cbc839a8-589b-45cb-84cf-69bcfc313c57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\drawScore\draw_text">
+      <UniqueIdentifier>{815e4ab2-b270-439f-bd39-a4815aca850b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Window.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalMove.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="MCamera.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="MShapeGenerator.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="FileResource.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetResource.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceLoad.cpp">
+      <Filter>Файлы исходного кода\Load</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceBase.cpp">
+      <Filter>Файлы исходного кода\Load</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageResourceLoad.cpp">
+      <Filter>Файлы исходного кода\Load</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageResource.cpp">
+      <Filter>Файлы исходного кода\Load</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelResourceLoad.cpp">
+      <Filter>Файлы исходного кода\Load</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelObject.cpp">
+      <Filter>Файлы исходного кода\Load</Filter>
+    </ClCompile>
+    <ClCompile Include="MapResource.cpp">
+      <Filter>Файлы исходного кода\Load</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderBase.cpp">
+      <Filter>Файлы исходного кода\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderCookie1.cpp">
+      <Filter>Файлы исходного кода\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="CookieDrawControl.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawCookieBase.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawCookieStandart.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderCookieBase.cpp">
+      <Filter>Файлы исходного кода\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="PipeDrawControl.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawPipeBase.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawPipeDefault.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderPipeDefault.cpp">
+      <Filter>Файлы исходного кода\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderPipeBase.cpp">
+      <Filter>Файлы исходного кода\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="BarrierBase.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawBarrierRotor.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="BarrierSetBase.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="BarrierSetDefault.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="BarrierManager.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingObjectStructBase.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingObjectStructAABB.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectBase.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderBarrierBase.cpp">
+      <Filter>Файлы исходного кода\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderBarrierRotor.cpp">
+      <Filter>Файлы исходного кода\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadCollisionObjectDataBase.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectCookie.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadCoockieCollisionData.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="EndGameDraw.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderBlur.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderCookieDestroyBase.cpp">
+      <Filter>Файлы исходного кода\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderCookieDestroy.cpp">
+      <Filter>Файлы исходного кода\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="OneDataRotationAttenuation.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="OneDataRotation.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="OneDataTransformBase.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomTransform.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomRotationAttenuation.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomRotationBase.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomRotation.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="TimerBase.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="TimerSteady.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="TimerHighResolution.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderDrawFullScreenQuad.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawFullScreenQuad.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="FullScreenQuadBuffer.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="FramebufferResource.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawEndGameBlur.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawBlur.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="LowPolyModel.cpp">
+      <Filter>Файлы исходного кода\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="LowPolyModelBase.cpp">
+      <Filter>Файлы исходного кода\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="LowPolyModelInstance.cpp">
+      <Filter>Файлы исходного кода\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="LowPolyModelInstanceBase.cpp">
+      <Filter>Файлы исходного кода\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingObject.cpp">
+      <Filter>Файлы исходного кода\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingAABB.cpp">
+      <Filter>Файлы исходного кода\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingSphere.cpp">
+      <Filter>Файлы исходного кода\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelBase.cpp">
+      <Filter>Файлы исходного кода\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingAABBInstance.cpp">
+      <Filter>Файлы исходного кода\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingSphereInstance.cpp">
+      <Filter>Файлы исходного кода\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="CookieModel.cpp">
+      <Filter>Файлы исходного кода\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="BarrierModel.cpp">
+      <Filter>Файлы исходного кода\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingObjectInstance.cpp">
+      <Filter>Файлы исходного кода\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingObjectStructSphere.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureLoad.cpp">
+      <Filter>Файлы исходного кода\Load v2</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadModelBase.cpp">
+      <Filter>Файлы исходного кода\Load v2</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadLowPolyModel.cpp">
+      <Filter>Файлы исходного кода\Load v2</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadImages.cpp">
+      <Filter>Файлы исходного кода\Load v2</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadImageBase.cpp">
+      <Filter>Файлы исходного кода\Load v2</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadBase.cpp">
+      <Filter>Файлы исходного кода\Load v2</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadDrawModel.cpp">
+      <Filter>Файлы исходного кода\Load v2</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadBoundingBase.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadSphereCookieBounding.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadAABBBounding.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadCookie.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadBarrier.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawObject.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Cookie.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Barrier.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadSphereBounding.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadCollect.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="CollectBase.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Collect.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="CollectStandart.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomNormal.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderCollectBase.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderCollectDefault.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="CollectControllBase.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="CollectControll.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="SugarControll.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="CoffeeControll.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="CollectDrawControllBase.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawBarrierStatic.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderBarrierStatic.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderDrawFlash.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="FlashResourceBuffer.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawFlashBase.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawFlash.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="FlashResourceTexture.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="LinearInterpolateData.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawFlashCreator.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderDrawText.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderDrawBitmap.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="QuadBuffer.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawBitmap.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreDrawerBase.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawDiget.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="DigetTextureResource.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceTextureBase.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawScore.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Score.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Window.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalMove.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="MCamera.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="MShapeGenerator.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="MHeder.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="FileResource.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetResource.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceStruct.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceLoad.h">
+      <Filter>Заголовочные файлы\Load</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceBase.h">
+      <Filter>Заголовочные файлы\Load</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageResource.h">
+      <Filter>Заголовочные файлы\Load</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageResourceLoad.h">
+      <Filter>Заголовочные файлы\Load</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelResourceLoad.h">
+      <Filter>Заголовочные файлы\Load</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelObject.h">
+      <Filter>Заголовочные файлы\Load</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderBase.h">
+      <Filter>Заголовочные файлы\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Заголовочные файлы\Load</Filter>
+    </ClInclude>
+    <ClInclude Include="MapResource.h">
+      <Filter>Заголовочные файлы\Load</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadStructure.h">
+      <Filter>Заголовочные файлы\Load</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderCookie1.h">
+      <Filter>Заголовочные файлы\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="CookieDrawControl.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawCookieBase.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawCookieStandart.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderCookieBase.h">
+      <Filter>Заголовочные файлы\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="PipeDrawControl.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawPipeBase.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawPipeDefault.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderPipeBase.h">
+      <Filter>Заголовочные файлы\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderPipeDefault.h">
+      <Filter>Заголовочные файлы\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="BarrierBase.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawBarrierRotor.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="BarrierSetBase.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="BarrierSetDefault.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="BarrierManager.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingObjectStructBase.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingObjectStructAABB.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingObjectStructSphere.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectBase.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderBarrierRotor.h">
+      <Filter>Заголовочные файлы\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderBarrierBase.h">
+      <Filter>Заголовочные файлы\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="CookieDestroyStruct.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadCollisionObjectDataBase.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectCookie.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadCoockieCollisionData.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="EndGameDraw.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderBlur.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderCookieDestroy.h">
+      <Filter>Заголовочные файлы\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderCookieDestroyBase.h">
+      <Filter>Заголовочные файлы\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomTransform.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="OneDataRotationAttenuation.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="OneDataRotation.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="OneDataTransformBase.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomRotationAttenuation.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomRotationBase.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomRotation.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="TimerBase.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="TimerSteady.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="TimerHighResolution.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderDrawFullScreenQuad.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawFullScreenQuad.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="FullScreenQuadBuffer.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="FramebufferResource.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawEndGameBlur.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawBlur.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="LowPolyModel.h">
+      <Filter>Заголовочные файлы\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="LowPolyModelBase.h">
+      <Filter>Заголовочные файлы\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="LowPolyModelInstance.h">
+      <Filter>Заголовочные файлы\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="LowPolyModelInstanceBase.h">
+      <Filter>Заголовочные файлы\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingObject.h">
+      <Filter>Заголовочные файлы\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingSphere.h">
+      <Filter>Заголовочные файлы\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingAABB.h">
+      <Filter>Заголовочные файлы\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingObjectInstance.h">
+      <Filter>Заголовочные файлы\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelBase.h">
+      <Filter>Заголовочные файлы\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="BarrierModel.h">
+      <Filter>Заголовочные файлы\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="CookieModel.h">
+      <Filter>Заголовочные файлы\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingAABBInstance.h">
+      <Filter>Заголовочные файлы\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingSphereInstance.h">
+      <Filter>Заголовочные файлы\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadModelBase.h">
+      <Filter>Заголовочные файлы\Load v2</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadBase.h">
+      <Filter>Заголовочные файлы\Load v2</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadLowPolyModel.h">
+      <Filter>Заголовочные файлы\Load v2</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadDrawModel.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadImageBase.h">
+      <Filter>Заголовочные файлы\Load v2</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadImages.h">
+      <Filter>Заголовочные файлы\Load v2</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureLoad.h">
+      <Filter>Заголовочные файлы\Load v2</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadBoundingBase.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadSphereCookieBounding.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadAABBBounding.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadCookie.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadBarrier.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawObject.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Cookie.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Barrier.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadSphereBounding.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadCollect.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="CollectBase.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Collect.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="CollectStandart.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomNormal.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderCollectBase.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderCollectDefault.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="CollectControllBase.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="CollectControll.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="SugarControll.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="CoffeeControll.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="CollectDrawControllBase.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawBarrierStatic.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderBarrierStatic.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderDrawFlash.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="FlashResourceBuffer.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawFlashBase.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawFlash.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="FlashResourceTexture.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="LinearInterpolateData.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawFlashCreator.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderDrawText.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderDrawBitmap.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadBuffer.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawBitmap.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreDrawerBase.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawDiget.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="DigetTextureResource.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceTextureBase.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawScore.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Score.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\shaders\barrier\blade_1\fragment.glsl">
+      <Filter>shaders\barrier\blade1</Filter>
+    </None>
+    <None Include="resource\shaders\barrier\blade_1\vertex.glsl">
+      <Filter>shaders\barrier\blade1</Filter>
+    </None>
+    <None Include="resource\shaders\cookie\1\vertex1.glsl">
+      <Filter>shaders\cookie\1</Filter>
+    </None>
+    <None Include="resource\shaders\cookie\1\fragment1.glsl">
+      <Filter>shaders\cookie\1</Filter>
+    </None>
+    <None Include="resource\shaders\pipe\default\fragment.glsl">
+      <Filter>shaders\pipe\default</Filter>
+    </None>
+    <None Include="resource\shaders\pipe\default\vertex.glsl">
+      <Filter>shaders\pipe\default</Filter>
+    </None>
+    <None Include="resource\shaders\cookie\1\fragment_destroy.glsl">
+      <Filter>shaders\cookie\1</Filter>
+    </None>
+    <None Include="resource\shaders\cookie\1\vertex_destroy.glsl">
+      <Filter>shaders\cookie\1</Filter>
+    </None>
+    <None Include="resource\shaders\end_game\fragment.glsl">
+      <Filter>shaders\end_game</Filter>
+    </None>
+    <None Include="resource\shaders\end_game\vertex.glsl">
+      <Filter>shaders\end_game</Filter>
+    </None>
+    <None Include="resource\shaders\fullscreenquad\fragment.glsl">
+      <Filter>shaders\fullscreenquad</Filter>
+    </None>
+    <None Include="resource\shaders\fullscreenquad\vertex.glsl">
+      <Filter>shaders\fullscreenquad</Filter>
+    </None>
+    <None Include="resource\shaders\collect\fragment.glsl">
+      <Filter>shaders\collect</Filter>
+    </None>
+    <None Include="resource\shaders\collect\vertex.glsl">
+      <Filter>shaders\collect</Filter>
+    </None>
+    <None Include="resource\shaders\barrier\static\fragment.glsl">
+      <Filter>shaders\barrier\static</Filter>
+    </None>
+    <None Include="resource\shaders\barrier\static\vertex.glsl">
+      <Filter>shaders\barrier\static</Filter>
+    </None>
+    <None Include="resource\shaders\collect\flash\fragment.glsl">
+      <Filter>shaders\collect\flash</Filter>
+    </None>
+    <None Include="resource\shaders\collect\flash\vertex.glsl">
+      <Filter>shaders\collect\flash</Filter>
+    </None>
+    <None Include="resource\shaders\draw_score\draw_bitmap\fragment.glsl">
+      <Filter>shaders\drawScore\draw_bitmap</Filter>
+    </None>
+    <None Include="resource\shaders\draw_score\draw_bitmap\vertex.glsl">
+      <Filter>shaders\drawScore\draw_bitmap</Filter>
+    </None>
+    <None Include="resource\shaders\draw_score\draw_text\fragment.glsl">
+      <Filter>shaders\drawScore\draw_text</Filter>
+    </None>
+    <None Include="resource\shaders\draw_score\draw_text\vertex.glsl">
+      <Filter>shaders\drawScore\draw_text</Filter>
+    </None>
+  </ItemGroup>
+</Project>

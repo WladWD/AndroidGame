@@ -1,0 +1,27 @@
+#include "MHeder.h"
+#include <random>
+#include <time.h>
+
+#pragma once
+namespace Random
+{
+	class RandomTransform
+	{
+		std::default_random_engine *mre;
+		std::uniform_real_distribution<double> *mRD;
+		///////////////////////////////////////////////////////////////
+	protected:
+		///////////////////////////////////////////////////////////////
+		glm::mat4 mResultTransform;
+		///////////////////////////////////////////////////////////////
+		double GetRandom_0_1(void);
+	public:
+		RandomTransform(void);
+		virtual ~RandomTransform();
+		///////////////////////////////////////////////////////////////
+		virtual void Update(float mDtMs, float mGtMs) = 0;
+		///////////////////////////////////////////////////////////////
+		virtual glm::mat4 GetTransormMatrix(void) = 0;
+	};
+}
+

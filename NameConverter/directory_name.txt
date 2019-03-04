@@ -1,0 +1,2 @@
+D:\VS2015 Project\AGame\NameConverter\example\
+D:\VS2015 Project\AGame\AGame\resource\

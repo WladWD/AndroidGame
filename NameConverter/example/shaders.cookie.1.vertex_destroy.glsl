@@ -1,0 +1,43 @@
+//#version 100
+/////////////////////////////////////////////////////////
+//define 
+#ifdef GL_FRAGMENT_PRECISION_HIGH
+precision highp float;
+#else
+precision mediump float;
+#endif
+/////////////////////////////////////////////////////////
+#define COOKIE_PICES_COUNT 64
+/////////////////////////////////////////////////////////
+//attribute
+attribute vec3 gWorldPos;
+attribute vec2 gTexCoord;
+/////////////////////////////////////////////////////////
+//varying
+varying vec3 gFragWorldPos;
+varying vec2 gFragTexCoord;
+/////////////////////////////////////////////////////////
+//uniform
+uniform mat4 mProjView;
+uniform mat4 mWorld;
+/////////////////////////////////////////////////////////
+uniform int mDrawIndex;
+uniform vec2 mGlobalData;// GlobalTime; GlobalVisible
+/////////////////////////////////////////////////////////
+uniform vec4 mMoving[COOKIE_PICES_COUNT];
+/////////////////////////////////////////////////////////
+//vertex shader
+void main()
+{
+	vec4 mVec = mMoving[mDrawIndex];
+	vec3 gLocal = gWorldPos + mVec.xyz * mGlobalData.x * mVec.w;
+
+	vec4 gWorld = mWorld * vec4(gLocal, 1.0);
+
+	gFragWorldPos = gWorld.xyz;
+	gFragTexCoord = gTexCoord;
+
+	gl_Position = mProjView * gWorld;
+}
+/////////////////////////////////////////////////////////
+

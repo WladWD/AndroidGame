@@ -1,0 +1,11 @@
+http://steps3d.narod.ru/tutorials/tutorial-obb.html
+http://www.realtimerendering.com/intersections.html#III236
+http://www.gamasutra.com/view/feature/3383/simple_intersection_tests_for_games.php
+http://graphics.stanford.edu/~cek/rayshade/raynotes/5-object/intersec.htm
+http://www.gamedev.ru/code/forum/?id=159957
+
+
+http://www.gamedev.ru/code/forum/?id=41118
+http://www.gamedev.ru/terms/AABB
+http://gdlinks.hut.ru/cdfaq/aabb.shtml
+http://gdlinks.hut.ru/cdfaq/obb.shtml#obb

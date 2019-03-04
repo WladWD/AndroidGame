@@ -1,0 +1,53 @@
+#include "CollectControllBase.h"
+#include "CollectStandart.h"
+#include "ShaderCollectDefault.h"
+#include "Score.h"
+
+#pragma once
+namespace Draw
+{
+	class CollectDrawControllBase
+	{
+	protected:
+		double mRotateVelDelta;
+		///////////////////////////////////////////////////////////////////////
+		const float mMaxDelta;
+		///////////////////////////////////////////////////////////////////////
+		std::vector<uint32_t> mNearesIndex;
+		///////////////////////////////////////////////////////////////////////
+		//int32_t mCurrentCount, mCurrentTarget;
+		///////////////////////////////////////////////////////////////////////
+		Engine::RandomNormal *mRandom;
+		///////////////////////////////////////////////////////////////////////
+		int32_t mIntAngle;
+		float mHeight, mAngleBase, fZOffset, mRotateVel;
+		int32_t mSectorsCount;
+		///////////////////////////////////////////////////////////////////////
+		glm::vec2 fFog;
+		const float *fFogColor;
+		///////////////////////////////////////////////////////////////////////
+		Camera::MCamera *cCamera;
+		//uint32_t mNearestIndex;
+		///////////////////////////////////////////////////////////////////////
+		std::vector<CollectBase *> mCollects;
+		///////////////////////////////////////////////////////////////////////
+		//uint32_t mCountSugar;
+		///////////////////////////////////////////////////////////////////////
+		float mStepH, mVer;
+		///////////////////////////////////////////////////////////////////////
+		virtual void Init(Draw::Collect *mCollect, Shader::ShaderCollectBase *mShader) = 0;
+	public:
+		CollectDrawControllBase(Draw::Collect *mCollect, Camera::MCamera *cCamera, float mHeight, float mAngleBase, float fZOffset, float mStepH,
+			glm::vec2 fFog, const float *fFogColor, float mRotateVel, Shader::ShaderCollectBase *mShaderCollect,
+			 int32_t mSectorsCount, float mMaxDelta);
+		~CollectDrawControllBase();
+		///////////////////////////////////////////////////////////////////////
+		virtual void Intersect(const Draw::CookieCollisionStruct &mCookieCollision);
+		virtual void Update(float fDeltaTime, float fGlobalTime, float fDeltaHeight);
+		virtual void Draw(void);
+		virtual void DrawFlash(void);
+		virtual void Present(void) = 0;
+		///////////////////////////////////////////////////////////////////////
+	};
+}
+

@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C214F205-DC4F-45DF-98AB-73FF0878DDB2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>AGame</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>G:\Program Files\OpenGL SDK\include;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\Program Files\OpenGL SDK\lib\Win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>G:\Program Files\OpenGL SDK\include;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\Program Files\OpenGL SDK\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>G:\Program Files\OpenGL SDK\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>G:\Program Files\OpenGL SDK\lib\Win32;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>G:\Program Files\OpenGL SDK\include;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\Program Files\OpenGL SDK\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AssetResource.cpp" />
+    <ClCompile Include="Barrier.cpp" />
+    <ClCompile Include="BarrierBase.cpp" />
+    <ClCompile Include="BarrierManager.cpp" />
+    <ClCompile Include="BarrierModel.cpp" />
+    <ClCompile Include="BarrierSetBase.cpp" />
+    <ClCompile Include="BarrierSetDefault.cpp" />
+    <ClCompile Include="BoundingAABB.cpp" />
+    <ClCompile Include="BoundingAABBInstance.cpp" />
+    <ClCompile Include="BoundingObject.cpp" />
+    <ClCompile Include="BoundingObjectInstance.cpp" />
+    <ClCompile Include="BoundingSphere.cpp" />
+    <ClCompile Include="BoundingSphereInstance.cpp" />
+    <ClCompile Include="CoffeeControll.cpp" />
+    <ClCompile Include="Collect.cpp" />
+    <ClCompile Include="CollectBase.cpp" />
+    <ClCompile Include="CollectControll.cpp" />
+    <ClCompile Include="CollectControllBase.cpp" />
+    <ClCompile Include="CollectDrawControllBase.cpp" />
+    <ClCompile Include="CollectStandart.cpp" />
+    <ClCompile Include="Cookie.cpp" />
+    <ClCompile Include="CookieModel.cpp" />
+    <ClCompile Include="DigetTextureResource.cpp" />
+    <ClCompile Include="DrawBarrierStatic.cpp" />
+    <ClCompile Include="DrawBitmap.cpp" />
+    <ClCompile Include="DrawBlur.cpp" />
+    <ClCompile Include="DrawDiget.cpp" />
+    <ClCompile Include="DrawEndGameBlur.cpp" />
+    <ClCompile Include="DrawFlash.cpp" />
+    <ClCompile Include="DrawFlashBase.cpp" />
+    <ClCompile Include="DrawFlashCreator.cpp" />
+    <ClCompile Include="DrawFullScreenQuad.cpp" />
+    <ClCompile Include="DrawObject.cpp" />
+    <ClCompile Include="DrawScore.cpp" />
+    <ClCompile Include="EndGameDraw.cpp" />
+    <ClCompile Include="FlashResourceBuffer.cpp" />
+    <ClCompile Include="FlashResourceTexture.cpp" />
+    <ClCompile Include="FramebufferResource.cpp" />
+    <ClCompile Include="FullScreenQuadBuffer.cpp" />
+    <ClCompile Include="LinearInterpolateData.cpp" />
+    <ClCompile Include="LoadAABBBounding.cpp" />
+    <ClCompile Include="LoadBarrier.cpp" />
+    <ClCompile Include="LoadBase.cpp" />
+    <ClCompile Include="LoadBoundingBase.cpp" />
+    <ClCompile Include="LoadCollect.cpp" />
+    <ClCompile Include="LoadCookie.cpp" />
+    <ClCompile Include="LoadDrawModel.cpp" />
+    <ClCompile Include="LoadImageBase.cpp" />
+    <ClCompile Include="LoadImages.cpp" />
+    <ClCompile Include="LoadLowPolyModel.cpp" />
+    <ClCompile Include="LoadModelBase.cpp" />
+    <ClCompile Include="LoadSphereBounding.cpp" />
+    <ClCompile Include="LoadSphereCookieBounding.cpp" />
+    <ClCompile Include="LowPolyModel.cpp" />
+    <ClCompile Include="LowPolyModelBase.cpp" />
+    <ClCompile Include="LowPolyModelInstance.cpp" />
+    <ClCompile Include="LowPolyModelInstanceBase.cpp" />
+    <ClCompile Include="ModelBase.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="ObjectBase.cpp" />
+    <ClCompile Include="BoundingObjectStructAABB.cpp" />
+    <ClCompile Include="BoundingObjectStructBase.cpp" />
+    <ClCompile Include="BoundingObjectStructSphere.cpp" />
+    <ClCompile Include="Collision.cpp" />
+    <ClCompile Include="CookieDrawControl.cpp" />
+    <ClCompile Include="DrawBarrierRotor.cpp" />
+    <ClCompile Include="DrawCookieBase.cpp" />
+    <ClCompile Include="DrawCookieStandart.cpp" />
+    <ClCompile Include="DrawPipeBase.cpp" />
+    <ClCompile Include="DrawPipeDefault.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="FileResource.cpp" />
+    <ClCompile Include="GlobalMove.cpp" />
+    <ClCompile Include="ImageResource.cpp" />
+    <ClCompile Include="ImageResourceLoad.cpp" />
+    <ClCompile Include="MapResource.cpp" />
+    <ClCompile Include="MCamera.cpp" />
+    <ClCompile Include="ModelObject.cpp" />
+    <ClCompile Include="ModelResourceLoad.cpp" />
+    <ClCompile Include="MShapeGenerator.cpp" />
+    <ClCompile Include="ObjectCookie.cpp" />
+    <ClCompile Include="OneDataRotation.cpp" />
+    <ClCompile Include="OneDataRotationAttenuation.cpp" />
+    <ClCompile Include="OneDataTransformBase.cpp" />
+    <ClCompile Include="PipeDrawControl.cpp" />
+    <ClCompile Include="QuadBuffer.cpp" />
+    <ClCompile Include="RandomNormal.cpp" />
+    <ClCompile Include="RandomRotation.cpp" />
+    <ClCompile Include="RandomRotationAttenuation.cpp" />
+    <ClCompile Include="RandomRotationBase.cpp" />
+    <ClCompile Include="RandomTransform.cpp" />
+    <ClCompile Include="ReadCollisionObjectDataBase.cpp" />
+    <ClCompile Include="ReadCoockieCollisionData.cpp" />
+    <ClCompile Include="ResourceBase.cpp" />
+    <ClCompile Include="ResourceLoad.cpp" />
+    <ClCompile Include="ResourceTextureBase.cpp" />
+    <ClCompile Include="Score.cpp" />
+    <ClCompile Include="ScoreDrawerBase.cpp" />
+    <ClCompile Include="ShaderBarrierBase.cpp" />
+    <ClCompile Include="ShaderBarrierRotor.cpp" />
+    <ClCompile Include="ShaderBarrierStatic.cpp" />
+    <ClCompile Include="ShaderBase.cpp" />
+    <ClCompile Include="ShaderBlur.cpp" />
+    <ClCompile Include="ShaderCollectBase.cpp" />
+    <ClCompile Include="ShaderCollectDefault.cpp" />
+    <ClCompile Include="ShaderCookie1.cpp" />
+    <ClCompile Include="ShaderCookieBase.cpp" />
+    <ClCompile Include="ShaderCookieDestroy.cpp" />
+    <ClCompile Include="ShaderCookieDestroyBase.cpp" />
+    <ClCompile Include="ShaderDrawBitmap.cpp" />
+    <ClCompile Include="ShaderDrawFlash.cpp" />
+    <ClCompile Include="ShaderDrawFullScreenQuad.cpp" />
+    <ClCompile Include="ShaderDrawText.cpp" />
+    <ClCompile Include="ShaderPipeBase.cpp" />
+    <ClCompile Include="ShaderPipeDefault.cpp" />
+    <ClCompile Include="SugarControll.cpp" />
+    <ClCompile Include="TextureLoad.cpp" />
+    <ClCompile Include="TimerBase.cpp" />
+    <ClCompile Include="TimerHighResolution.cpp" />
+    <ClCompile Include="TimerSteady.cpp" />
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AssetResource.h" />
+    <ClInclude Include="Barrier.h" />
+    <ClInclude Include="BarrierBase.h" />
+    <ClInclude Include="BarrierManager.h" />
+    <ClInclude Include="BarrierModel.h" />
+    <ClInclude Include="BarrierSetBase.h" />
+    <ClInclude Include="BarrierSetDefault.h" />
+    <ClInclude Include="BoundingAABB.h" />
+    <ClInclude Include="BoundingAABBInstance.h" />
+    <ClInclude Include="BoundingObject.h" />
+    <ClInclude Include="BoundingObjectInstance.h" />
+    <ClInclude Include="BoundingSphere.h" />
+    <ClInclude Include="BoundingSphereInstance.h" />
+    <ClInclude Include="CoffeeControll.h" />
+    <ClInclude Include="Collect.h" />
+    <ClInclude Include="CollectBase.h" />
+    <ClInclude Include="CollectControll.h" />
+    <ClInclude Include="CollectControllBase.h" />
+    <ClInclude Include="CollectDrawControllBase.h" />
+    <ClInclude Include="CollectStandart.h" />
+    <ClInclude Include="Cookie.h" />
+    <ClInclude Include="CookieDestroyStruct.h" />
+    <ClInclude Include="CookieModel.h" />
+    <ClInclude Include="DigetTextureResource.h" />
+    <ClInclude Include="DrawBarrierStatic.h" />
+    <ClInclude Include="DrawBitmap.h" />
+    <ClInclude Include="DrawBlur.h" />
+    <ClInclude Include="DrawDiget.h" />
+    <ClInclude Include="DrawEndGameBlur.h" />
+    <ClInclude Include="DrawFlash.h" />
+    <ClInclude Include="DrawFlashBase.h" />
+    <ClInclude Include="DrawFlashCreator.h" />
+    <ClInclude Include="DrawFullScreenQuad.h" />
+    <ClInclude Include="DrawObject.h" />
+    <ClInclude Include="DrawScore.h" />
+    <ClInclude Include="EndGameDraw.h" />
+    <ClInclude Include="FlashResourceBuffer.h" />
+    <ClInclude Include="FlashResourceTexture.h" />
+    <ClInclude Include="FramebufferResource.h" />
+    <ClInclude Include="FullScreenQuadBuffer.h" />
+    <ClInclude Include="LinearInterpolateData.h" />
+    <ClInclude Include="LoadAABBBounding.h" />
+    <ClInclude Include="LoadBarrier.h" />
+    <ClInclude Include="LoadBase.h" />
+    <ClInclude Include="LoadBoundingBase.h" />
+    <ClInclude Include="LoadCollect.h" />
+    <ClInclude Include="LoadCookie.h" />
+    <ClInclude Include="LoadDrawModel.h" />
+    <ClInclude Include="LoadImageBase.h" />
+    <ClInclude Include="LoadImages.h" />
+    <ClInclude Include="LoadLowPolyModel.h" />
+    <ClInclude Include="LoadModelBase.h" />
+    <ClInclude Include="LoadSphereBounding.h" />
+    <ClInclude Include="LoadSphereCookieBounding.h" />
+    <ClInclude Include="LowPolyModel.h" />
+    <ClInclude Include="LowPolyModelBase.h" />
+    <ClInclude Include="LowPolyModelInstance.h" />
+    <ClInclude Include="LowPolyModelInstanceBase.h" />
+    <ClInclude Include="ModelBase.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="ObjectBase.h" />
+    <ClInclude Include="BoundingObjectStructAABB.h" />
+    <ClInclude Include="BoundingObjectStructBase.h" />
+    <ClInclude Include="BoundingObjectStructSphere.h" />
+    <ClInclude Include="Collision.h" />
+    <ClInclude Include="CookieDrawControl.h" />
+    <ClInclude Include="DrawBarrierRotor.h" />
+    <ClInclude Include="DrawCookieBase.h" />
+    <ClInclude Include="DrawCookieStandart.h" />
+    <ClInclude Include="DrawPipeBase.h" />
+    <ClInclude Include="DrawPipeDefault.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="FileResource.h" />
+    <ClInclude Include="GlobalMove.h" />
+    <ClInclude Include="ImageResource.h" />
+    <ClInclude Include="ImageResourceLoad.h" />
+    <ClInclude Include="LoadStructure.h" />
+    <ClInclude Include="MapResource.h" />
+    <ClInclude Include="MCamera.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="MHeder.h" />
+    <ClInclude Include="ModelObject.h" />
+    <ClInclude Include="ModelResourceLoad.h" />
+    <ClInclude Include="MShapeGenerator.h" />
+    <ClInclude Include="ObjectCookie.h" />
+    <ClInclude Include="OneDataRotation.h" />
+    <ClInclude Include="OneDataRotationAttenuation.h" />
+    <ClInclude Include="OneDataTransformBase.h" />
+    <ClInclude Include="PipeDrawControl.h" />
+    <ClInclude Include="QuadBuffer.h" />
+    <ClInclude Include="RandomNormal.h" />
+    <ClInclude Include="RandomRotation.h" />
+    <ClInclude Include="RandomRotationAttenuation.h" />
+    <ClInclude Include="RandomRotationBase.h" />
+    <ClInclude Include="RandomTransform.h" />
+    <ClInclude Include="ReadCollisionObjectDataBase.h" />
+    <ClInclude Include="ReadCoockieCollisionData.h" />
+    <ClInclude Include="ResourceBase.h" />
+    <ClInclude Include="ResourceLoad.h" />
+    <ClInclude Include="ResourceStruct.h" />
+    <ClInclude Include="ResourceTextureBase.h" />
+    <ClInclude Include="Score.h" />
+    <ClInclude Include="ScoreDrawerBase.h" />
+    <ClInclude Include="ShaderBarrierBase.h" />
+    <ClInclude Include="ShaderBarrierRotor.h" />
+    <ClInclude Include="ShaderBarrierStatic.h" />
+    <ClInclude Include="ShaderBase.h" />
+    <ClInclude Include="ShaderBlur.h" />
+    <ClInclude Include="ShaderCollectBase.h" />
+    <ClInclude Include="ShaderCollectDefault.h" />
+    <ClInclude Include="ShaderCookie1.h" />
+    <ClInclude Include="ShaderCookieBase.h" />
+    <ClInclude Include="ShaderCookieDestroy.h" />
+    <ClInclude Include="ShaderCookieDestroyBase.h" />
+    <ClInclude Include="ShaderDrawBitmap.h" />
+    <ClInclude Include="ShaderDrawFlash.h" />
+    <ClInclude Include="ShaderDrawFullScreenQuad.h" />
+    <ClInclude Include="ShaderDrawText.h" />
+    <ClInclude Include="ShaderPipeBase.h" />
+    <ClInclude Include="ShaderPipeDefault.h" />
+    <ClInclude Include="SugarControll.h" />
+    <ClInclude Include="TextureLoad.h" />
+    <ClInclude Include="TimerBase.h" />
+    <ClInclude Include="TimerHighResolution.h" />
+    <ClInclude Include="TimerSteady.h" />
+    <ClInclude Include="Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\shaders\barrier\blade_1\fragment.glsl" />
+    <None Include="resource\shaders\barrier\blade_1\vertex.glsl" />
+    <None Include="resource\shaders\barrier\static\fragment.glsl" />
+    <None Include="resource\shaders\barrier\static\vertex.glsl" />
+    <None Include="resource\shaders\collect\flash\fragment.glsl" />
+    <None Include="resource\shaders\collect\flash\vertex.glsl" />
+    <None Include="resource\shaders\collect\fragment.glsl" />
+    <None Include="resource\shaders\collect\vertex.glsl" />
+    <None Include="resource\shaders\cookie\1\fragment1.glsl" />
+    <None Include="resource\shaders\cookie\1\fragment_destroy.glsl" />
+    <None Include="resource\shaders\cookie\1\vertex1.glsl" />
+    <None Include="resource\shaders\cookie\1\vertex_destroy.glsl" />
+    <None Include="resource\shaders\draw_score\draw_bitmap\fragment.glsl" />
+    <None Include="resource\shaders\draw_score\draw_bitmap\vertex.glsl" />
+    <None Include="resource\shaders\draw_score\draw_text\fragment.glsl" />
+    <None Include="resource\shaders\draw_score\draw_text\vertex.glsl" />
+    <None Include="resource\shaders\end_game\fragment.glsl" />
+    <None Include="resource\shaders\end_game\vertex.glsl" />
+    <None Include="resource\shaders\fullscreenquad\fragment.glsl" />
+    <None Include="resource\shaders\fullscreenquad\vertex.glsl" />
+    <None Include="resource\shaders\pipe\default\fragment.glsl" />
+    <None Include="resource\shaders\pipe\default\vertex.glsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
